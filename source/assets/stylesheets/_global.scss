@@ -1,0 +1,110 @@
+html, body{
+  height:100%;
+}
+body {
+  background-color: $light-gray;
+  color: $dark-gray;
+}
+
+section {
+	padding: 6em 0 3em;
+  position: relative;
+  overflow: hidden;
+  @include clearfix;
+}
+
+.container {
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 .5em;
+  @include clearfix;
+  
+  .title {
+    text-align: center;
+    margin-bottom: 2em; 
+  }
+  
+  .title hr {
+    border: solid 2px rgba(0, 0, 0, 0.1);
+    margin: 1em auto 1.5em; 
+    
+  }
+  hr.small {
+    width: 10em;
+  }
+  
+}
+
+.image-bg {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  min-width: 100%;
+  top: 0;
+  left: 0;
+  z-index: -200;
+}
+
+.image-bg {
+	background: #333;
+	background-size: cover;
+  background-attachment: fixed;
+}
+
+.color-overlay {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+///  background-color: darken($accent-color, 18%);
+  background-color: #000;
+  opacity: 0.5;
+  z-index: -100;
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 3em;
+}
+
+
+
+h1 {
+    font-family: $heading-font-family;
+    font-size: 1.8em;
+    margin-bottom: 0.5em;
+
+    @include susy-media($medium-screen) {
+      font-size: 2.4em;
+    }
+  }
+
+h2 {
+  font-family: $heading-font-family;
+  font-size: 1.2em;
+  font-weight: 400;
+  line-height: 1.4em;
+  margin-bottom: 0.9em;
+
+  @include susy-media($medium-screen) {
+    font-size: 1.4em;
+  }
+}
+
+h3 {
+  font-family: $heading-font-family;
+  font-size: 1.2em;
+  font-weight: 400;
+  line-height: 1.3em;
+  margin-bottom: 0.4em;
+}
+
+h4 {
+  font-family: $heading-font-family;
+  font-size: 1em;
+  font-weight: 400;
+  line-height: 1.2em;
+  margin-bottom: 0.3em;
+}

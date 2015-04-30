@@ -1,0 +1,63 @@
+/// QUOTES
+
+section.quote {
+  text-align: center;
+  padding: 140px 0;
+  &::before {
+    content: ' ';
+    display: block;
+    background-color: #efefef;
+    height: 160px;
+    top: -100px;
+    left: -100px;
+    right: -100px;
+    position: absolute;
+    -webkit-transform: rotate(-2deg);
+    -moz-transform: rotate(-2deg);
+    -ms-transform: rotate(-2deg);
+    -o-transform: rotate(-2deg);
+    transform: rotate(-2deg);
+  };
+
+
+  &::after {
+    content: ' ';
+    display: block;
+    background-color: #efefef;
+    height: 160px;
+    bottom: -100px;
+    left: -100px;
+    right: -100px;
+    position: absolute;
+    -webkit-transform: rotate(1deg);
+    -moz-transform: rotate(1deg);
+    -ms-transform: rotate(1deg);
+    -o-transform: rotate(1deg);
+    transform: rotate(1deg);
+  };
+
+	.image-bg {
+		background: #333 url('../images/bg-bricks-medium.jpg') 0 50% no-repeat;
+		background-size: cover;
+	}
+
+  blockquote {
+    font-style: normal;
+    color: white;
+    font-size: 2em;
+    margin: 0;
+    border: 0;
+    padding-left: 0;
+    cursor: move; 
+  }
+  cite {
+    padding-top: 1.5em;
+    font-size: 1em;
+    color: white;
+    display: block; 
+    &::before {
+      content: '\2014 \00A0'; 
+    };
+  }
+  
+}
