@@ -83,6 +83,14 @@ $("#quote-slider").owlCarousel({
      dots: true,
      });
 
+$("#gallery-slider").owlCarousel({
+     items: 1,
+     loop: true,
+     autoplay: true,
+     nav: false,
+     dots: true,
+     });
+
 # modals
 $ ->
   $('#modal-1').on 'change', ->

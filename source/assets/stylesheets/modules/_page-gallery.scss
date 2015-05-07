@@ -1,0 +1,62 @@
+
+.gallery {
+
+  $large-screen: em(860) !default;
+  $footer-background: desaturate(darken($action-color, 20%), 30%);
+  padding: 1em 0 1em;
+  text-shadow: rgba(255,255,255,0.8) 1px 1px 2px;
+  background: desaturate(darken($action-color, 10%), 30%);
+  
+  &::before {
+    content: ' ';
+    display: block;
+    background-color: #efefef;
+    height: 160px;
+    top: -100px;
+    left: -100px;
+    right: -100px;
+    position: absolute;
+    -webkit-transform: rotate(-1deg);
+    -moz-transform: rotate(-2deg);
+    -ms-transform: rotate(-1deg);
+    -o-transform: rotate(-1deg);
+    transform: rotate(-1deg);
+  };
+  &::after {
+    content: ' ';
+    display: block;
+    background: $footer-background;
+    height: 160px;
+    bottom: -100px;
+    left: -100px;
+    right: -100px;
+    position: absolute;
+    -webkit-transform: rotate(1deg);
+    -moz-transform: rotate(1deg);
+    -ms-transform: rotate(1deg);
+    -o-transform: rotate(1deg);
+    transform: rotate(1deg);
+  };  
+  .title {
+    background: #fff url('../images/bg-ads2.jpg') 50% 4em no-repeat;
+    background-size: 100%;
+    padding-bottom: 16em;
+    margin-bottom: 0;
+  }
+  
+  h2 {
+    font-size: 2.4em;
+  }
+  
+  h3 {
+    text-transform: uppercase;
+  }
+
+  .owl-controls {
+    position: absolute;
+    bottom: 2em;
+    left: 0;
+    width: 100%;
+  }
+  
+}

@@ -58,9 +58,9 @@ section {
   width: 100%;
   top: 0;
   left: 0;
-///  background-color: darken($accent-color, 18%);
-  background-color: #000;
-  opacity: 0.5;
+  background-color: desaturate(darken($action-color, 20%), 70%);
+//  background-color: #000;
+  opacity: 0.4;
   z-index: -100;
 }
 

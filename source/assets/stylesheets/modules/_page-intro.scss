@@ -20,6 +20,21 @@ section.intro {
     -o-transform: rotate(-6.4deg);
     transform: rotate(-6.4deg);
   };
+  &::after {
+    content: ' ';
+    display: block;
+    background-color: #efefef;
+    height: 200px;
+    bottom: -100px;
+    left: -100px;
+    right: -100px;
+    position: absolute;
+    -webkit-transform: rotate(6.4deg);
+    -moz-transform: rotate(6.4deg);
+    -ms-transform: rotate(6.4deg);
+    -o-transform: rotate(6.4deg);
+    transform: rotate(6.4deg);
+  };
   
 	h1 {
 	  text-align: center;
