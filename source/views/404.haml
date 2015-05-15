@@ -1,0 +1,34 @@
+!!!
+%html
+  %head
+    %meta{charset: "utf-8"}/
+    %meta{content: "IE=edge,chrome=1", http: {equiv: "X-UA-Compatible"}}
+    %meta{name: "viewport", content: "width=device-width, initial-scale=1"}
+
+    %title Деловой Центр «Пушкинский», Хабаровск, ул. Пушкина, 54
+    %link{href: "assets/stylesheets/application.css", rel: "stylesheet", type: "text/css"}
+    %link{href: "http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css", rel: "stylesheet", type: "text/css"}
+    %link{href:"http://fonts.googleapis.com/css?family=Philosopher:400,400italic&subset=latin,cyrillic",rel:"stylesheet",type: "text/css"}
+    %link{href:"http://fonts.googleapis.com/css?family=Open+Sans:400,300,700&subset=latin,cyrillic",rel:"stylesheet",type: "text/css"}
+    
+
+    %body
+    -# Intro section
+
+    %section{class: "error404", id: "section-error404"}
+      -# .image-bg{:data => {stellar_background_ratio: "0.4"}}
+      .image-bg{}
+      -# .color-overlay
+      .container
+        .logo
+          %h1
+            %a{href: "/"}
+              %img{src: "assets/images/logo-big.png", alt: "Деловой центр Пушкинский, Хабарвоск"}
+        .slogan
+          %h2
+            Страница не найдена
+        %p
+          Запрошенная страница не найдена на сервере. Пожалуйста, перейдите на <a href="/">главную страницу сайта</a>.
+      -# %a{href: "#section-features", class: "jump-down"}
+        -# %i.fa.fa-chevron-down
+

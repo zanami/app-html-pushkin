@@ -1,0 +1,28 @@
+section.error404 {
+	color: white;
+	min-height: 100%;
+	padding: 0;
+  text-align: center;  
+  position: relative;
+
+	h1 {
+	  color: white;
+	  padding-bottom: .5em;
+    margin: 0;
+	}
+	
+	h2 {
+	  font-size: 1.2em;
+	  padding: 0 15%;
+	}
+	
+  .color-overlay {
+    opacity: 0.3;
+  }
+  .container {
+    padding-top: 4.5em;
+    width: em(500px);
+    
+  }
+
+}

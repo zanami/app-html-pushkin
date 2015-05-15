@@ -53,6 +53,10 @@ section.intro {
 		background: #333 url('../images/bg-main-dark.jpg') 0 -120px no-repeat;
 		background-size: cover;
 	}
+  
+  .color-overlay {
+    opacity: 0.6;
+  }
 	
 	a.jump-down {
 	  position: absolute;
@@ -109,6 +113,7 @@ section.intro {
       float: left;
     }
     .phone {
+      text-shadow: rgba(0,0,0,0.9) 1px 1px 3px;
       width: 300px;
       float: right;
       padding-right: 4em;
