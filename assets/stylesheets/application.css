@@ -1082,10 +1082,11 @@ section.intro {
     font-size: 1.2em;
     padding: 0 15%; }
   section.intro .image-bg {
-    background: #333 url('../images/bg-main-dark.jpg') 0 -120px no-repeat;
+    background: #333 url('../images/slide1.jpg') 0 -120px no-repeat;
     background-size: cover; }
   section.intro .color-overlay {
-    opacity: 0.6; }
+    opacity: 0.2;
+    background-color: #000; }
   section.intro a.jump-down {
     position: absolute;
     bottom: 4em;
