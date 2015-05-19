@@ -91,6 +91,25 @@ $("#gallery-slider").owlCarousel({
      dots: true,
      });
 
+$("#rent170-slider").owlCarousel({
+     items: 1,
+     loop: true,
+     autoplay: true,
+     nav: false,
+     dots: true,
+     animateOut: 'fadeOut',
+     });
+
+$("#rent3-slider").owlCarousel({
+     items: 1,
+     loop: true,
+     autoplay: true,
+     nav: false,
+     dots: true,
+     animateOut: 'fadeOut'
+     });
+
+
 # modals
 $ ->
   $('#modal-1').on 'change', ->

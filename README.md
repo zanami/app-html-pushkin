@@ -1,6 +1,6 @@
-# Proteus - Gulp
+# Static HTML site using Susy Bourbon Gulp
 
-## About Proteus
+## Built Using Proteus
 [Proteus](http://github.com/thoughtbot/proteus) is a collection of useful
 starter kits to help you prototype faster. It follows the
 [thoughtbot styleguide](https://github.com/thoughtbot/guides) and includes our
@@ -18,7 +18,7 @@ Includes
 * [Bourbon](http://bourbon.io):
   Sass mixin library
 * [Neat](http://neat.bourbon.io):
-  Semantic grid for Sass and Bourbon
+  Semantic grid for Sass and Bourbon (*Replaced with Susy*)
 * [Bitters](http://bitters.bourbon.io):
   Scaffold styles, variables and structure for Bourbon projects.
 * [Express](http://expressjs.com): Lightweight Node web server
@@ -46,9 +46,30 @@ gulp
 ```
 
 Deploy to Github Pages
+
+```
+git add . # Add any untracked files
+git commit -va # Commit the changes
+git push # Push it to Github
+```
+
+You'll also need to make sure you have a gh-pages branch, if you don't already.
+
+```
+git checkout --orphan gh-pages
+git rm -rf .
+touch README.md
+git add README.md
+git commit -m "Init gh-pages"
+git push --set-upstream origin gh-pages
+git checkout master
+```
+
 ```
 gulp deploy
 ```
+
+See guide on [gulp and gh-pages](http://charliegleason.com/articles/deploying-to-github-pages-with-gulp).
 
 Or install the [Proteus gem](https://github.com/thoughtbot/proteus) and enjoy some shortcuts.
 
@@ -56,30 +77,4 @@ Stylesheets, images, fonts, and javascript files go in the `/source/assets/` dir
 Vendor stylesheets and javascripts should go in each of their `/vendor/` directories.
 The source folders for images and fonts have a `.keep` file in them so they can be in the repo, but you can remove those files.
 
-Contributing
-------------
-
-If you have problems, please create a
-[GitHub Issue](https://github.com/thoughtbot/proteus-gulp/issues)
-
-Have a fix or want to add a feature? Open a
-[Pull Request](https://github.com/thoughtbot/proteus-gulp/pulls)
-
-
-Credits
--------
-
-[![thoughtbot](http://images.thoughtbot.com/bourbon/thoughtbot-logo.svg)](http://thoughtbot.com)
-
-This application is maintained and funded by [thoughtbot, inc](http://thoughtbot.com/community)
-
-Thank you to all [the contributors](https://github.com/thoughtbot/proteus-middleman/contributors)!
-
-License
--------
-
-The names and logos for thoughtbot are trademarks of thoughtbot, inc.
-
-Proteus Gulp is Copyright © 2014 thoughtbot, inc. It is free software, and may be
-redistributed under the terms specified in the LICENSE file.
 # app-html-emporium

@@ -81,7 +81,7 @@
       .container
         .title
           %h2 Аренда
-          %h3 Актуальные преложения — сободные помещения в ДЦ «Пушкинский».
+          %h3 Актуальные предложения — сободные помещения в ДЦ «Пушкинский».
         .row
           .split-left.split-text
             %h3 Просторный зал для ресторана, клуба, проведения конференций, торжеств
@@ -104,7 +104,16 @@
             %p Блок состоит из нескольких помещений с отличной отделкой, с домофоном на входе.
             %p Имеется помещение, специально оборудованное под кассу.
           .split-right.split-media
-            %img{src: "assets/images/rent-four.jpg", alt: "Аренда помещения на Пушкина, 54, Хабаровск"}
+            -#%img{src: "assets/images/rent-four.jpg", alt: "Аренда помещения на Пушкина, 54, Хабаровск"}
+            .owl-carousel.owl-theme#rent170-slider
+              .item
+                %img{:src => "assets/images/m170-1.jpg", :alt => ""}
+              .item
+                %img{:src => "assets/images/m170-2.jpg", :alt => ""}
+              .item
+                %img{:src => "assets/images/m170-3.jpg", :alt => ""}
+              .item
+                %img{:src => "assets/images/m170-4.jpg", :alt => ""}
         .row
           .split-right.split-text
             %h3 Свободные офисы
@@ -113,7 +122,14 @@
               %li 1 этаж — помещение под офис площадью 13 м².
               %li 4–5 этажи — помещения под офисы 36, 24, 38, 51, 28, 53, 37, 41 м².
           .split-left.split-media
-            %img{src: "assets/images/rent-three.jpg", alt: "Аренда помещения на Пушкина, 54, Хабаровск"}
+            -#%img{src: "assets/images/rent-three.jpg", alt: "Аренда помещения на Пушкина, 54, Хабаровск"}
+            .owl-carousel.owl-theme#rent3-slider
+              .item
+                %img{:src => "assets/images/rent-three.jpg", :alt => ""}
+              .item
+                %img{:src => "assets/images/r3-2.jpg", :alt => ""}
+              .item
+                %img{:src => "assets/images/r3-3.jpg", :alt => ""}
 
     %section{class: "ads", id: "section-ads"}
       -# .image-bg{}

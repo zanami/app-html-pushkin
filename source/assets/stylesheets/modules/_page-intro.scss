@@ -9,10 +9,10 @@ section.intro {
     content: ' ';
     display: block;
     background-color: #efefef;
-    height: 200px;
-    bottom: -100px;
-    left: -100px;
-    right: -100px;
+    height: 230px;
+    bottom: -120px;
+    left: -130px;
+    right: -130px;
     position: absolute;
     -webkit-transform: rotate(-6.4deg);
     -moz-transform: rotate(-6.4deg);
@@ -24,10 +24,10 @@ section.intro {
     content: ' ';
     display: block;
     background-color: #efefef;
-    height: 200px;
-    bottom: -100px;
-    left: -100px;
-    right: -100px;
+    height: 230px;
+    bottom: -120px;
+    left: -130px;
+    right: -130px;
     position: absolute;
     -webkit-transform: rotate(6.4deg);
     -moz-transform: rotate(6.4deg);
@@ -50,12 +50,13 @@ section.intro {
 	}
 	
 	.image-bg {
-		background: #333 url('../images/bg-main-dark.jpg') 0 -120px no-repeat;
+		background: #333 url('../images/bg-main-medium.jpg') 0 15% no-repeat;
 		background-size: cover;
 	}
   
   .color-overlay {
-    opacity: 0.6;
+    opacity: 0.2;
+    background-color: #000;
   }
 	
 	a.jump-down {
