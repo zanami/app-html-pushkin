@@ -1439,7 +1439,7 @@ section.quote {
     font-size: small; }
 
 .ads {
-  padding: 6em 0 0;
+  padding: 6em 0 6em;
   text-shadow: rgba(255, 255, 255, 0.8) 1px 1px 2px; }
   .ads::before {
     content: ' ';
@@ -1469,11 +1469,6 @@ section.quote {
     -ms-transform: rotate(1deg);
     -o-transform: rotate(1deg);
     transform: rotate(1deg); }
-  .ads .title {
-    background: #fff url('../images/bg-ads2.jpg') 50% 4em no-repeat;
-    background-size: 100%;
-    padding-bottom: 16em;
-    margin-bottom: 0; }
   .ads h2 {
     font-size: 2.4em; }
   .ads h3 {
