@@ -12,7 +12,7 @@
     %link{href:"http://fonts.googleapis.com/css?family=Open+Sans:400,300,700&subset=latin,cyrillic",rel:"stylesheet",type: "text/css"}
     
 
-    %body
+  %body
     -# Intro section
 
     %section{class: "intro", id: "section-intro"}
@@ -99,29 +99,12 @@
             %img{src: "assets/images/rent-two.jpg", alt: "Аренда офиса на Пушкина, 54, Хабаровск"}
         .row
           .split-left.split-text
-            %h3 Отдельное помещение под офис
-            %p.lead  Площадь 170 м², оптимально для небольшой компании. 
-            %p Блок состоит из нескольких помещений с отличной отделкой, с домофоном на входе.
-            %p Имеется помещение, специально оборудованное под кассу.
-          .split-right.split-media
-            -#%img{src: "assets/images/rent-four.jpg", alt: "Аренда помещения на Пушкина, 54, Хабаровск"}
-            .owl-carousel.owl-theme#rent170-slider
-              .item
-                %img{:src => "assets/images/m170-1.jpg", :alt => ""}
-              .item
-                %img{:src => "assets/images/m170-2.jpg", :alt => ""}
-              .item
-                %img{:src => "assets/images/m170-3.jpg", :alt => ""}
-              .item
-                %img{:src => "assets/images/m170-4.jpg", :alt => ""}
-        .row
-          .split-right.split-text
             %h3 Свободные офисы
             %p.lead Сдаем в аренду офисы на различных этажах ДЦ Пушкинский.
             %ul
               %li 1 этаж — помещение под офис площадью 13 м².
-              %li 4–5 этажи — помещения под офисы 36, 24, 38, 51, 28, 53, 37, 41 м².
-          .split-left.split-media
+              %li 4–5 этажи — помещения под офисы 24, 38, 40, 53 м².
+          .split-right.split-media
             -#%img{src: "assets/images/rent-three.jpg", alt: "Аренда помещения на Пушкина, 54, Хабаровск"}
             .owl-carousel.owl-theme#rent3-slider
               .item
@@ -136,10 +119,23 @@
       .color-overlay
       .container
         .title
-          %h2 Реклама
-          %h3 Предлагаем в аренду рекламную конструкцию на крыше здания ДЦ Пушкинский
-          %p Выгодное расположение здания обеспечивает обзор рекламного носителя с четырех центральных улиц города и является идеальным местом для имиджевой рекламы
-          -# %img{src: "assets/images/bg-ads2.jpg", alt: "Аренда помещения на Пушкина, 54, Хабаровск"}
+        .row
+          .split-left.split-text
+          	%h2 Отправить запрос
+            %p.lead Выяснить детали, узнать цены и условия вы можете по телефону +7 (4212) 30-69-87.
+            %p Также вы можете заполнить форму или написать на %a{:href => "mailto:bizc2013@mail.ru"} bizc2013@mail.ru и мы ответим вам по электронной почте.
+          .split-right
+						%form{:action => "//formspree.io/mr.scoff@gmail.com", :method => "POST"}
+							%label{:for => "name"} Как вас зовут?
+							%input.form-control{:name => "name", :required => "", :type => "text"}
+							%label{:for => "name"} Телефон
+							%input.form-control{:name => "name", :type => "text"}
+							%label{:for => "_replyto"} E-mail
+							%input.form-control{:name => "_replyto", :type => "email"}
+							%label{:for => "text"} Ваш вопрос или предложение
+							%textarea.form-control{:name => "text", :rows => "2"}
+							%input{:name => "_next", :type => "hidden", :value => "//pushkina54.ru/thanks.html"}
+							%input.btn.btn-lg{:type => "submit", :value => "Отправить сообщение"}/
 
     -# %section{class: "shops", id: "section-shops"}
       .color-overlay

@@ -140,3 +140,21 @@ $(document).ready ->
     $(this).toggleClass 'expander-hidden'
     return
   return
+
+### mail ajaxify 
+
+$(document).ready ->
+	$('.submit').click ->
+	  $.ajax
+	    type: 'POST'
+	    url: '/send.php'
+	    data:
+	      name: $('input[name="name"]').val()
+	      phone: $('input[name="phone"]').val()
+	    dataType: 'json'
+	    success: (response) ->
+	      status = $.parseJSON(JSON.stringify(response))
+	      $('.form-tos span').html status['status']
+	      return
+	  return
+###
