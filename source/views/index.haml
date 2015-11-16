@@ -118,24 +118,27 @@
       -# .image-bg{}
       .color-overlay
       .container
-        .title
         .row
           .split-left.split-text
-          	%h2 Отправить запрос
+            %h2 Отправить запрос
             %p.lead Выяснить детали, узнать цены и условия вы можете по телефону +7 (4212) 30-69-87.
-            %p Также вы можете заполнить форму или написать на %a{:href => "mailto:bizc2013@mail.ru"} bizc2013@mail.ru и мы ответим вам по электронной почте.
+            %p
+              Также вы можете заполнить форму или написать на 
+              %a{:href => "mailto:bizc2013@mail.ru"} bizc2013@mail.ru
+              и мы ответим вам по электронной почте.
           .split-right
-						%form{:action => "//formspree.io/mr.scoff@gmail.com", :method => "POST"}
-							%label{:for => "name"} Как вас зовут?
-							%input.form-control{:name => "name", :required => "", :type => "text"}
-							%label{:for => "name"} Телефон
-							%input.form-control{:name => "name", :type => "text"}
-							%label{:for => "_replyto"} E-mail
-							%input.form-control{:name => "_replyto", :type => "email"}
-							%label{:for => "text"} Ваш вопрос или предложение
-							%textarea.form-control{:name => "text", :rows => "2"}
-							%input{:name => "_next", :type => "hidden", :value => "//pushkina54.ru/thanks.html"}
-							%input.btn.btn-lg{:type => "submit", :value => "Отправить сообщение"}/
+            %form{:action => "//formspree.io/bizc2013@mail.ru", :method => "POST"}
+              %label{:for => "name"} Как вас зовут?
+              %input.form-control{:name => "name", :required => "", :type => "text"}
+              %label{:for => "name"} Телефон
+              %input.form-control{:name => "name", :type => "text"}
+              %label{:for => "_replyto"} E-mail
+              %input.form-control{:name => "_replyto", :type => "email"}
+              %label{:for => "text"} Ваше сообщение
+              %textarea.form-control{:name => "text", :rows => "2"}
+              %input{:name => "_next", :type => "hidden", :value => "//pushkina54.ru/thanks.html"}
+              %input.form-control{:name => "_subject", :type => "hidden", :value => "Письмо с сайта pushkina54.ru"}
+              %input.btn.btn-lg{:type => "submit", :value => "Отправить сообщение"}
 
     -# %section{class: "shops", id: "section-shops"}
       .color-overlay
