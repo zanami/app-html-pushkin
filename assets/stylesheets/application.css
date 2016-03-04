@@ -1138,6 +1138,8 @@ section.intro {
     color: white;
     font-size: 2.6rem;
     text-shadow: rgba(0, 0, 0, 0.9) 1px 1px 7px; }
+  .features .news {
+    text-align: center; }
   .features .feature-item {
     text-align: center;
     padding: 2em 0 2em; }
